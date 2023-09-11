@@ -47,13 +47,64 @@ body{
     flex-direction: column;
     justify-content: center;
     padding: 3em;
+    width: 35%;
 }
+
+.form-heading{
+    font-size: 30px;
+    padding-bottom: 1em;
+    color: var(--Dark-Slate-Grey);
+}
+
+.form-info{
+    padding-bottom: 1em;
+}
+
+.form-lists{
+    padding-bottom: 1em;
+}
+
+.form-lists li{
+    list-style: none;
+    padding-bottom: .8em;
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+
+
+
+
+
+
+
+
+
 form{
     display: flex;
     flex-direction: column;
-    padding-top: 2em;
+    gap: 1em;
 }
 
+label{
+    padding-bottom: .5em;
+    font-weight: var(--bold-weight);
+    color: var(--Dark-Slate-Grey);
+}
+input{
+    padding: 1.3em;
+    border-radius: 10px;
+    border: .1px solid var(--Charcoal-Grey);
+}
+
+.form-btn{
+    padding: 1.3em;
+    border-radius: 10px;
+    border: .1px solid var(--Charcoal-Grey);
+    background-color: var(--Dark-Slate-Grey);
+    color: var(--White);
+}
 .attribution{
     margin-top: auto;
 }
