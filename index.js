@@ -1,11 +1,10 @@
 // validating the email address.
 
 function emailValidation() {
-    const mail = document.querySelector(".email").value;
+    const email = document.getElementById("email").value;
+    const pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/; 
 
-    var regx = /^[a-zA-Z0-9.!#$%&'*+\/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/;
-
-    if (regx.test(mail)) {
+    if (email.match(pattern)) {
       alert("Thanks for subscribing!");
       return true;
     } else {
