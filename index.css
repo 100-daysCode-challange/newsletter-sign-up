@@ -33,7 +33,7 @@ body{
     display: flex;
     justify-content: space-between;
     position: absolute;
-    width: 1440px;
+    width: 1040px;
     margin: auto;
     top: 50%;
     left: 50%;
@@ -47,7 +47,7 @@ body{
     flex-direction: column;
     justify-content: center;
     padding: 3em;
-    width: 35%;
+    width: 50%;
 }
 
 .form-heading{
