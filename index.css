@@ -39,8 +39,20 @@ body{
     left: 50%;
     transform: translate(-50%,-50%);
     background-color: var(--White);
+    padding: 1em;
+    border-radius: 2.5em;
 }
-
+.form-left-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 3em;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    padding-top: 2em;
+}
 
 .attribution{
     margin-top: auto;
