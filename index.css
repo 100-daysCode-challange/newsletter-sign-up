@@ -207,4 +207,16 @@ form input {
   .right-content {
     order: -1;
   }
+
+  .notification{
+    width: 350px;
+  }
+
+  .notification-details h2{
+    font-size: 38px;
+  }
+
+  .notification-details p{
+    font-size: 12px;
+  }
 }
