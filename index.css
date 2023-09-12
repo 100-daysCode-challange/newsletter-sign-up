@@ -11,6 +11,7 @@
     --Charcoal-Grey: hsl(235, 18%, 26%);
     --Grey: hsl(231, 7%, 60%);
     --White: hsl(0, 0%, 100%);
+    --Tomato: hsl(4, 100%, 67%);
 
     /* Font */
     --font-family: 'Roboto', sans-serif;
@@ -46,13 +47,54 @@ body{
 .notification {
     display: none;
     background-color: var(--White);
-    width: 500px;
-    margin: auto;
+    width: 450px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     justify-content: center;
     align-items: center;
-    padding: 2em;
     border-radius: 2.5em;
 }
+
+.notification-details{
+    width: 100%;
+    margin: auto;
+    padding: 3em;
+}
+
+.notification h2{
+    font-size: 48px;
+    font-weight: var(--bold-weight);
+    color: var(--Dark-Slate-Grey);
+    padding-top: .3em;
+    padding-bottom: .3em;
+}
+
+.notification p{
+    font-size: 14px;
+    line-height: 1.3em;
+    padding-bottom: .3em;
+    color: var(--Charcoal-Grey);
+}
+
+.notification p span{
+    color: var(--Charcoal-Grey);
+    font-weight: var(--bold-weight);
+}
+
+.dismiss-button{
+    padding: 1.5em;
+    margin-top: 1em;
+    width: 100%;
+    background-color: var(--Tomato);
+    border: none;
+    border-radius: .9em;
+}
+.dismiss-button:hover{
+    cursor: pointer;
+}
+
 .form-left-container{
     display: flex;
     flex-direction: column;
