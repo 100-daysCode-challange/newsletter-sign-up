@@ -105,7 +105,10 @@
           </div>
           <div class="bottom-content">
             <form>
-              <label for="email" class="email">Email address</label>
+              <div class="lable-text">
+                <label for="email" class="email">Email address</label>
+              <p class="error-message">Valid email reqires</p>
+              </div>
               <input type="email" id="email" placeholder="email@company.com" />
               <button
                 onclick="emailValidation()"

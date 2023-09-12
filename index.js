@@ -3,7 +3,9 @@
 function emailValidation() {
     const formContainer = document.querySelector(".main-container");
     const notification = document.querySelector(".notification");
-    const email = document.getElementById("email").value;
+    const emailInput = document.getElementById("email");
+    const email = emailInput.value;
+    const errorMessage = document.querySelector(".error-message");
     const pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/; 
 
     if (email.match(pattern)) {
@@ -11,7 +13,10 @@ function emailValidation() {
         notification.style.display = "block";
         return true;
     } else {
-      alert("wrong email");
+      emailInput.style.borderColor = "hsl(4, 100%, 67%)";
+      emailInput.style.borderWidth = "2px"
+      emailInput.style.backgroundColor = "hsla(4, 100%, 67%, 0.5)";
+      errorMessage.style.display = "block"
       return false;
     }
 }

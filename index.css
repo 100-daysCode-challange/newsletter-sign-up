@@ -93,6 +93,16 @@ form {
   gap: 1em;
 }
 
+.lable-text{
+  display: flex;
+  justify-content: space-between;
+}
+
+.error-message{
+  display: none;
+  color: var(--Tomato);
+}
+
 form input {
   padding: 1.5em;
   border-radius: 8px;
