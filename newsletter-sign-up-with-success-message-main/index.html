@@ -1,111 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/index.css">
-  
-  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/index.css" />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <title>
+      Frontend Mentor | Newsletter sign-up form with success message
+    </title>
 
-  <!-- Sign-up form start -->
-  <div class="form-container">
-    <div class="form-left-container">
-      <div class="form-heading">
-        <h1>Stay updated!</h1>
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="content">
+        <div class="left-content">
+          <div class="top-content">
+            <h1>Stay updated!</h1>
+            <p>Join 60,000+ product managers receiving monthly updates on:</p>
+            <ul class="content-list">
+              <!-- List 1 -->
+              <li class="list-items">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="21"
+                  height="21"
+                  viewBox="0 0 21 21"
+                >
+                  <g fill="none">
+                    <circle cx="10.5" cy="10.5" r="10.5" fill="#FF6155" />
+                    <path
+                      stroke="#FFF"
+                      stroke-width="2"
+                      d="M6 11.381 8.735 14 15 8"
+                    />
+                  </g>
+                </svg>
+                <p>Product discovery and building what matters</p>
+              </li>
+              <!-- List 1 -->
+              <!-- List 2 -->
+              <li class="list-items">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="21"
+                  height="21"
+                  viewBox="0 0 21 21"
+                >
+                  <g fill="none">
+                    <circle cx="10.5" cy="10.5" r="10.5" fill="#FF6155" />
+                    <path
+                      stroke="#FFF"
+                      stroke-width="2"
+                      d="M6 11.381 8.735 14 15 8"
+                    />
+                  </g>
+                </svg>
+                <p>Measuring to ensure updates are a success</p>
+              </li>
+              <!-- List 2 -->
+              <!-- List 3 -->
+              <li class="list-items">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="21"
+                  height="21"
+                  viewBox="0 0 21 21"
+                >
+                  <g fill="none">
+                    <circle cx="10.5" cy="10.5" r="10.5" fill="#FF6155" />
+                    <path
+                      stroke="#FFF"
+                      stroke-width="2"
+                      d="M6 11.381 8.735 14 15 8"
+                    />
+                  </g>
+                </svg>
+                <p>And much more!</p>
+              </li>
+              <!-- List 3 -->
+            </ul>
+          </div>
+          <div class="bottom-content">
+            <form>
+              <label for="email" class="email">Email address</label>
+              <input type="email" id="email" placeholder="email@company.com" />
+              <button
+                onclick="emailValidation()"
+                class="form-btn"
+                type="button"
+              >
+                Subscribe to monthly newsletter
+              </button>
+            </form>
+          </div>
+        </div>
+        <div class="right-content">
+          <picture>
+            <source
+              srcset="
+                /newsletter-sign-up-with-success-message-main/assets/images/illustration-sign-up-mobile.svg
+              "
+              media="min-width:600px"
+            />
+            <img
+              src="/newsletter-sign-up-with-success-message-main/assets/images/illustration-sign-up-desktop.svg"
+              alt=""
+            />
+          </picture>
+        </div>
       </div>
-      <div class="form-info">
-        <p>Join 60,000+ product managers receiving monthly updates on:</p>
-      </div>
-      <ul class="form-lists">
-        <li>
-            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21">
-                <g fill="none">
-                    <circle cx="10.5" cy="10.5" r="10.5" fill="#FF6155"/>
-                    <path stroke="#FFF" stroke-width="2" d="M6 11.381 8.735 14 15 8"/>
-                </g>
-            </svg>
-            Product discovery and building what matters
-        </li>
-        <li>
-            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21">
-                <g fill="none">
-                    <circle cx="10.5" cy="10.5" r="10.5" fill="#FF6155"/>
-                    <path stroke="#FFF" stroke-width="2" d="M6 11.381 8.735 14 15 8"/>
-                </g>
-            </svg>
-            Measuring to ensure updates are a success
-        </li>
-        <li>
-            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21">
-                <g fill="none">
-                    <circle cx="10.5" cy="10.5" r="10.5" fill="#FF6155"/>
-                    <path stroke="#FFF" stroke-width="2" d="M6 11.381 8.735 14 15 8"/>
-                </g>
-            </svg>
-            And much more!
-        </li>
-      </ul>
-
-      <form>
-        <label for="email" class="email">Email address</label>
-        <input type="email" id="email" placeholder="email@company.com">
-        <button onclick="emailValidation()" class="form-btn" type="button">Subscribe to monthly newsletter</button>
-      </form>
     </div>
-    
-    <div class="form-rigth-container">
-      <img src="/newsletter-sign-up-with-success-message-main/assets/images/illustration-sign-up-desktop.svg" alt="">
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
     </div>
-  </div>
-  
-  <div class="notification">
-    <div class="notification-details">
-      <div class="icon">
-        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 21 21">
-                <g fill="none">
-                    <circle cx="10.5" cy="10.5" r="10.5" fill="#FF6155"/>
-                    <path stroke="#FFF" stroke-width="2" d="M6 11.381 8.735 14 15 8"/>
-                </g>
-         </svg>
-      </div>
-      <h2>Thanks for subscribing!</h2>
-      <p class="message">A confirmation email has been sent to <span>ash@loremcompany.com</span> . Please open it and click the button inside to confirm your subscription.</p>
-      <button class="dismiss-button" onclick="returnToMainPage()">Dismiss message</button>
-    </div>
-    </div>
+  </body>
 
-
-  <!-- Sign-up form end -->
-
-  <!-- Success message start -->
-
-  <!-- Thanks for subscribing!
-
-  A confirmation email has been sent to ash@loremcompany.com. 
-  Please open it and click the button inside to confirm your subscription.
-
-  Dismiss message -->
-
-  <!-- Success message end -->
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
-
-<script src="/index.js"></script>
+  <script src="/index.js"></script>
 </html>
