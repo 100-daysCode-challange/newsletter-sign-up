@@ -15,3 +15,7 @@ function emailValidation() {
       return false;
     }
 }
+
+function returnToMainPage(){
+    window.location.href = "index.html"
+}
