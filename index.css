@@ -194,9 +194,11 @@ form input {
 @media screen and (max-width: 767px) {
   .main-container{
     max-width: 375px;
+    padding-top: 0;
   }
   .content {
     grid-template-columns: 1fr;
+    padding-top: 0;
   }
 
   .right-content {
