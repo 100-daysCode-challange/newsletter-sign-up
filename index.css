@@ -200,6 +200,9 @@ form input {
     grid-template-columns: 1fr;
     padding-top: 0;
   }
+  .left-content{
+    padding-top: 2em;
+  }
 
   .right-content {
     order: -1;
