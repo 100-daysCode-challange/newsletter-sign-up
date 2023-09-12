@@ -175,18 +175,31 @@ form input {
   margin-top: auto;
 }
 
-@media screen and (max-width: 890px) {
-    .content{
-        grid-template-columns: 1fr;
-    }
+.mobile-img {
+  max-width: 100%;
+  height: auto;
+  width: 100%;
+}
 
-    .right-content{
-        order: -1;
-    }
+@media screen and (max-width: 835px) {
+  .top-content h1 {
+    font-size: 47px;
+  }
 
-  .form-right-container {
-    background-image: url(/newsletter-sign-up-with-success-message-main/assets/images/illustration-sign-up-mobile.svg);
-    background-repeat: no-repeat;
-    width: 100%;
+  .top-content p{
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .main-container{
+    max-width: 375px;
+  }
+  .content {
+    grid-template-columns: 1fr;
+  }
+
+  .right-content {
+    order: -1;
   }
 }
