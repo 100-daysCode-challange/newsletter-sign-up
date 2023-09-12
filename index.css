@@ -219,12 +219,23 @@ form input {
   }
 
   .notification {
-    width: 100%;
+    width: 375px;
     height: 100%;
     border-radius: 0;
-    
   }
 
+  .notification-details {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .dismiss-button{
+    position: relative;
+    bottom: -150px;
+  }
   .notification-details h2 {
     font-size: 38px;
   }
