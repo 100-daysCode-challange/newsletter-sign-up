@@ -175,12 +175,14 @@ form input {
   margin-top: auto;
 }
 
-@media screen and (max-width: 900px) {
-  .form-container {
-    grid-template-columns: 1fr;
-    justify-content: center;
-    align-items: center;
-  }
+@media screen and (max-width: 890px) {
+    .content{
+        grid-template-columns: 1fr;
+    }
+
+    .right-content{
+        order: -1;
+    }
 
   .form-right-container {
     background-image: url(/newsletter-sign-up-with-success-message-main/assets/images/illustration-sign-up-mobile.svg);
