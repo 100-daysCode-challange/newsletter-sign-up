@@ -1,7 +1,7 @@
 // validating the email address.
 
 function emailValidation() {
-    const formContainer = document.querySelector(".form-container");
+    const formContainer = document.querySelector(".main-container");
     const notification = document.querySelector(".notification");
     const email = document.getElementById("email").value;
     const pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/; 
